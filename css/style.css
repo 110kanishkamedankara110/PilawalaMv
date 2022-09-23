@@ -1,0 +1,387 @@
+            @font-face {
+                font-family: "default";
+                src: url("../fonts/Rubik-VariableFont_wght.ttf");
+            }
+            
+            * {
+                font-family: "default";
+            }
+            
+            body {
+                margin: 0;
+                background-color: #eeeeee;
+                overflow-x: hidden;
+            }
+            
+            html {
+                scroll-behavior: smooth;
+            }
+            
+            .main-div {
+                width: 100%;
+                height: fit-content;
+            }
+            
+            .clubs {
+                width: 100%;
+                height: fit-content;
+                margin-left: -100%;
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                box-sizing: border-box;
+                gap: 10px;
+                padding: 10px;
+                transition: 2s;
+            }
+            
+            .clubs-div {
+                width: 100%;
+                height: 300px;
+                background-color: #eeeeee;
+                border-radius: 20px;
+                box-shadow: 2px 5px 11px -2px rgba(0, 0, 0, 0.73);
+                background-size: 100% 100%;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            
+            .events {
+                width: 100%;
+                height: fit-content;
+                margin-left: 200%;
+                display: grid;
+                grid-template-columns: repeat(auto-fit, 400px);
+                box-sizing: border-box;
+                gap: 10px;
+                padding: 10px;
+                transition: 2s;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            .events-div {
+                width: 100%;
+                height: 500px;
+                background-color: #eeeeee;
+                border-radius: 20px;
+                box-shadow: 2px 5px 11px -2px rgba(0, 0, 0, 0.73);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            
+            .header {
+                padding: 10px;
+                width: 100%;
+                height: fit-content;
+                background-color: transparent;
+                position: fixed;
+                top: 0;
+                z-index: 9999;
+                display: flex;
+                /* border-bottom: solid black 2px; */
+                box-sizing: border-box;
+                align-items: center;
+                gap: 10px;
+            }
+            
+             ::-webkit-scrollbar {
+                background-color: transparent;
+                width: 10px;
+            }
+            
+             ::-webkit-scrollbar-thumb {
+                border-radius: 10px;
+                background-color: rgb(65, 56, 56);
+            }
+            
+            .contact {
+                text-align: center;
+                width: 100%;
+                height: fit-content;
+                padding: 20px;
+                box-sizing: border-box;
+                background-color: rgb(53, 50, 50);
+            }
+            
+            .cen {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+            }
+            
+            .icon {
+                width: 50px;
+                height: 50px;
+                background-position: center;
+                background-size: contain;
+                border-radius: 50%;
+                background-color: #eeeeee;
+                cursor: pointer;
+            }
+            
+            .main-image {
+                width: 100%;
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-image: url('../image/main.jpg');
+                transition: 2s;
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+            }
+            
+            .batch {
+                display: inline-block;
+                width: 100px;
+                height: 130px;
+                background-image: url('../image/batch.jpg');
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            
+            .links {
+                display: inline-block;
+                padding: 10px;
+                box-sizing: border-box;
+                width: fit-content;
+                height: fit-content;
+            }
+            
+            .about {
+                width: 100%;
+                height: fit-content;
+                display: grid;
+                grid-template-columns: 50% 50%;
+                grid-template-rows: 100%;
+                grid-template-areas: "about-image about-text";
+                overflow-x: hidden;
+                overflow-y: hidden;
+                background-size: cover;
+                background-position: top;
+                background-repeat: no-repeat;
+            }
+            
+            .about-image {
+                grid-area: "about-image";
+                width: 100%;
+                margin-left: -100%;
+                height: 100%;
+                transition: 1.5s;
+            }
+            
+            .about-text {
+                grid-area: "about-text";
+                width: 100%;
+                height: 100%;
+                display: grid;
+                margin-left: 200%;
+                justify-content: center;
+                align-items: center;
+                align-content: center;
+                justify-items: center;
+                transition: 1.5s;
+                padding: 10px;
+                box-sizing: border-box;
+            }
+            
+            .shadow {
+                width: 100%;
+                height: 100%;
+                background-color: rgba(253, 247, 247, 0.408);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            .sh {
+                width: 100%;
+                height: 100%;
+                background-color: rgba(111, 107, 107, 0.438);
+            }
+            
+            .link-button {
+                padding: 10px;
+                border-radius: 20px;
+                border: none;
+                cursor: pointer;
+                transition: 0.5s;
+                margin: 5px;
+            }
+            
+            .link-button:hover {
+                padding: 10px;
+                border-radius: 20px;
+                border: none;
+                cursor: pointer;
+                background-color: rgb(53, 50, 50);
+                color: #eeeeee;
+            }
+            
+            .image {
+                width: 80%;
+                margin-left: 10px;
+                aspect-ratio: 1;
+                margin-top: -100px;
+                /* transform: rotate(-10deg); */
+                background-image: url('../image/principal.jpg');
+                background-size: 100% 100%;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            
+            .text {
+                width: 100%;
+                height: fit-content;
+                text-align: center;
+                overflow-y: auto;
+                padding: 10px;
+                box-sizing: border-box;
+                /* background-image: url('../image/images.jpg'); */
+                background-color: rgb(9, 25, 4);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                padding: 10px;
+                border-radius: 20px;
+                box-sizing: border-box;
+            }
+            
+            @media(max-width:600px) {
+                .clubs {
+                    width: 100%;
+                    height: fit-content;
+                    margin-left: 0;
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                    box-sizing: border-box;
+                    gap: 10px;
+                    padding: 10px;
+                    transition: 2s;
+                }
+                .about {
+                    width: 100%;
+                    height: fit-content;
+                    display: grid;
+                    grid-template-columns: 100% !important;
+                    grid-template-rows: 50% 50% !important;
+                    grid-template-areas: "about-image" "about-text" !important;
+                    overflow-x: hidden;
+                    overflow-y: hidden;
+                    background-size: contain;
+                    background-position: top;
+                    background-repeat: no-repeat;
+                }
+                .text {
+                    width: 100%;
+                    /* margin-left: 10px; */
+                    height: 100%;
+                    margin-left: 0;
+                    margin-top: 0;
+                    text-align: center;
+                    overflow-y: auto;
+                    background-color: rgb(9, 25, 4);
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    padding: 10px;
+                    border-radius: 20px;
+                    box-sizing: border-box;
+                }
+                .events {
+                    width: 100%;
+                    height: fit-content;
+                    margin-left: 0;
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                    box-sizing: border-box;
+                    gap: 10px;
+                    padding: 10px;
+                    transition: 2s;
+                }
+                .lbh {
+                    font-size: 12px;
+                }
+                .f {
+                    font-size: 50px !important;
+                }
+                .f2 {
+                    font-size: 20px !important;
+                }
+                .image {
+                    width: 100%;
+                    margin-left: 0;
+                    height: 100%;
+                    margin-top: 0px;
+                    transform: rotate(0deg);
+                    background-image: url('../image/principal.jpg');
+                    background-size: 100% 100%;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                }
+                .link-button {
+                    padding: 10px;
+                    border-radius: 20px;
+                    border: solid black 1px;
+                    cursor: pointer;
+                    transition: 0.5s;
+                    margin: 5px;
+                }
+                .main-image {
+                    width: 100%;
+                    height: 50vh;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .header {
+                    padding: 10px;
+                    width: 100%;
+                    transition: 0.5s;
+                    height: fit-content;
+                    background-color: transparent;
+                    position: sticky;
+                    top: 0;
+                    /* z-index: 9999; */
+                    display: flex;
+                    /* border-bottom: solid black 2px; */
+                    background-color: #eeeeee;
+                    box-sizing: border-box;
+                    align-items: center;
+                    gap: 10px;
+                }
+                .about-image {
+                    grid-area: "about-image";
+                    width: 100%;
+                    margin-left: 0;
+                    height: 100%;
+                    transition: 1.5s;
+                }
+                .about-text {
+                    grid-area: "about-text";
+                    width: 100%;
+                    height: 100%;
+                    display: grid;
+                    margin-left: 0;
+                    justify-content: center;
+                    align-items: center;
+                    align-content: center;
+                    justify-items: center;
+                    transition: 1.5s;
+                    box-sizing: border-box;
+                }
+                .batch {
+                    display: inline-block;
+                    width: 50px;
+                    height: 70px;
+                    background-image: url('../image/batch.jpg');
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                }
+            }

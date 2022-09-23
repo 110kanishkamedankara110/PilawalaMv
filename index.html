@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pilawala National School</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="icon" href="image/batch.jpg" />
+</head>
+
+<body onload="car()">
+    <!-- main div -->
+    <div class="main-div">
+        <!-- header -->
+        <header class="header">
+            <div class="batch"></div>
+            <div class="links">
+                <button onclick="show('home')" class="link-button"><h3 class="lbh" style="margin:0px;">Home</h3></button>
+                <button onclick="show('about')" class="link-button"><h3 class="lbh" style="margin:0px;">About</h3></button>
+
+                <button onclick="show('eve')" class="link-button"><h3 style="margin:0px;" class="lbh">Events</h3></button>
+                <button onclick="show('contact')" class="link-button"><h3 class="lbh" style="margin:0px;">Contact Us</h3></button>
+            </div>
+
+        </header>
+        <!-- header -->
+
+        <!-- main-image -->
+        <div class="main-image" id="home">
+
+
+            <div class="shadow">
+                <div style="text-align:center;border-radius: 20px;" id="mt">
+                    <h1 style="font-size:100px;color: rgb(9, 25, 4);" class="f">Welcome</h1>
+                    <h1 style="font-size:100px;color: rgb(9, 25, 4);" class="f">To</h1>
+                    <h1 style="font-size:100px;color: rgb(9, 25, 4);" class="f">Pilawala National School</h1>
+                </div>
+            </div>
+
+        </div>
+        <!-- main-image -->
+
+        <!-- about -->
+
+        <div class="about" id="about" style="background-image:url('image/Blue-Wave-PNG-Picture.png');">
+            <div class="about-image" id="ai">
+                <div class="image"></div>
+            </div>
+            <div class="about-text" id="at">
+                <div class="text" style="color:#eeeeee;">
+                    <h1 class="f">දැක්ම</h1>
+                    <h3 class="f2">
+                        මධ්‍යම පළාත තුළ ප්‍රමුඛ ද්විතියික පාසලක් බවට පත් කිරීම.
+                    </h3>
+                    <h1 class="f">මෙහෙවර​</h1>
+                    <h3 class="f2">
+                        ඉගෙනුම් ඉගැන්වීම් ක්‍රියාවලිය තුලින් සමබර පෞරුෂයකින් යුත් අධිෂ්ඨානශීලි විනයගරුක දූ දරු පිරිසක් සමජයතට දායාද කිරිම​​
+                    </h3>
+                </div>
+            </div>
+        </div>
+        <!-- about -->
+        <!-- clubs -->
+        <h1 style="text-align:center;">Clubs</h1>
+        <div class="clubs" id="clubs">
+            <div class="clubs-div" style="background-color:  rgb(25, 4, 9);background-image: url('image/Innovation-Club-267x300.png');"></div>
+            <div class="clubs-div" style="background-color: rgb(10, 4, 25);background-image: url('image/GGC-Sports-Club-Logo.jpg');"></div>
+            <div class="clubs-div" style="background-color:  rgb(9, 25, 4);background-image: url('image/si.png');"></div>
+            <div class="clubs-div" style="background-color: rgb(10, 4, 25);background-image: url('image/sci.jpg');"></div>
+
+
+        </div>
+        <!-- clubs -->
+        <!-- ads -->
+        <h1 style="text-align:center;" id="eve">Events</h1>
+        <div class="events" id="events">
+            <div class="events-div" style="background-color:  rgb(25, 4, 9);background-image: url('events/cricket.jpg');"></div>
+            <div class="events-div" style="background-color: rgb(10, 4, 25);background-image: url('events/f.jpg');"></div>
+
+
+        </div>
+        <!-- ads -->
+        <!-- contact -->
+        <div class="contact" id="contact">
+            <h1 style="color:#eeeeee;">Contact Us</h1>
+            <h3 style="color:#eeeeee;">Tel : 081 2422333</h3>
+            <h3 style="color:#eeeeee;">K/Pilawala National School </h3>
+            <div style="width:100%;" class="cen">
+                <div class="icon" style="background-image:url('icon/7089163_gmail_google_icon.svg');" onclick="window.location='mailto:pilawalamv@gmail.com'"></div>
+                <a href="https://www.facebook.com/Pilawala-National-school-100218939529518" style="text-decoration:none;" target="_blank">
+                    <div class="icon" style="background-image:url('icon/5296499_fb_facebook_facebook\ logo_icon.svg');"></div>
+                </a>
+            </div>
+
+        </div>
+        <!-- contact -->
+
+        <!-- footer -->
+        <div class="footer">
+
+        </div>
+        <!-- footer -->
+    </div>
+    <!-- main div -->
+
+    <script src="js/script.js"></script>
+    <script>
+        window.addEventListener('scroll', function() {
+
+            var sbar = window.scrollY;
+
+
+            var div = document.getElementById("about").getBoundingClientRect().y;
+            var div2 = document.getElementById("clubs").getBoundingClientRect().y;
+            var div3 = document.getElementById("events").getBoundingClientRect().y;
+
+            if (sbar >= div) {
+
+                document.getElementById("ai").style.marginLeft = 0;
+                document.getElementById("at").style.marginLeft = 0;
+
+            }
+            if (sbar >= div2) {
+
+                document.getElementById("clubs").style.marginLeft = 0;
+
+            }
+            if (sbar >= div3) {
+
+                document.getElementById("events").style.marginLeft = 0;
+
+            }
+
+        });
+    </script>
+</body>
+
+</html>
