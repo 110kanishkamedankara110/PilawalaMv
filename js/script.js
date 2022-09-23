@@ -1,5 +1,6 @@
 function show(x) {
     document.getElementById(x).scrollIntoView();
+    clo();
 }
 var i = 0;
 var img0 = "image/car1.jpg";
@@ -34,5 +35,20 @@ function carosel() {
 
 
 
+
+}
+
+function more() {
+    document.getElementById("clo").style.display = "flex";
+    document.getElementById("menu").style.marginLeft = "0";
+    document.getElementById("mo").style.display = "none";
+
+
+}
+
+function clo() {
+    document.getElementById("clo").style.display = "none";
+    document.getElementById("menu").style.marginLeft = "-200%";
+    document.getElementById("mo").style.display = "flex";
 
 }

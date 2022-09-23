@@ -253,7 +253,29 @@
                 box-sizing: border-box;
             }
             
+            .more-button {
+                display: none;
+            }
+            
+            .menu {
+                transform: 2s;
+                width: 100%;
+                margin-left: -200%;
+                height: 100%;
+                background-color: #e3d5d5c5;
+                position: fixed;
+                z-index: 9999999;
+                padding: 10px;
+            }
+            
             @media(max-width:600px) {
+                .links {
+                    display: inline-block;
+                    padding: 10px;
+                    box-sizing: border-box;
+                    width: fit-content;
+                    height: fit-content;
+                }
                 .clubs {
                     width: 100%;
                     height: fit-content;
@@ -265,9 +287,53 @@
                     padding: 10px;
                     transition: 2s;
                 }
+                .more-button {
+                    width: 50px;
+                    height: 50px;
+                    display: flex;
+                    position: fixed;
+                    right: 10px;
+                    top: 20px;
+                    border: none;
+                    padding: 10px;
+                    box-sizing: border-box;
+                    background-size: cover;
+                    background-color: #eeeeee65;
+                    border-radius: 10px;
+                    background-position: top;
+                    background-repeat: no-repeat;
+                }
+                .menu {
+                    transition: 1.5s;
+                    width: 100%;
+                    margin-left: -200%;
+                    height: 100%;
+                    background-color: #e3d5d5c5;
+                    position: fixed;
+                    z-index: 9999999;
+                    padding: 10px;
+                }
+                .more-button:hover {
+                    width: 50px;
+                    height: 50px;
+                    display: flex;
+                    position: fixed;
+                    right: 10px;
+                    top: 20px;
+                    border: none;
+                    padding: 10px;
+                    box-sizing: border-box;
+                    background-size: cover;
+                    background-color: #eeeeeea4;
+                    cursor: pointer;
+                    transition: 0.5s;
+                    border-radius: 10px;
+                    background-position: top;
+                    background-repeat: no-repeat;
+                }
                 .about {
                     width: 100%;
-                    margin-top: 20px;
+                    margin-top: 0px;
                     height: fit-content;
                     display: grid;
                     grid-template-columns: 100% !important;
@@ -333,10 +399,11 @@
                     cursor: pointer;
                     transition: 0.5s;
                     margin: 5px;
+                    display: none;
                 }
                 .main-image {
                     width: 100%;
-                    height: 50vh;
+                    height: 80vh;
                     display: flex;
                     justify-content: center;
                     align-items: center;
@@ -347,12 +414,12 @@
                     transition: 0.5s;
                     height: fit-content;
                     background-color: transparent;
-                    position: sticky;
+                    position: fixed;
                     top: 0;
-                    /* z-index: 9999; */
+                    z-index: 9999;
                     display: flex;
                     /* border-bottom: solid black 2px; */
-                    background-color: #eeeeee;
+                    background-color: transparent;
                     box-sizing: border-box;
                     align-items: center;
                     gap: 10px;

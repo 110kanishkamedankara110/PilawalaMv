@@ -21,9 +21,26 @@
 
                 <button onclick="show('eve')" class="link-button"><h3 style="margin:0px;" class="lbh">Events</h3></button>
                 <button onclick="show('contact')" class="link-button"><h3 class="lbh" style="margin:0px;">Contact Us</h3></button>
+                <button id="mo" onclick="more()" class="more-button" style="background-image: url('icon/2205199_dot_hide_menu_more_icon.svg');"></button>
             </div>
 
+
         </header>
+        <!-- menu  -->
+        <div class="menu" id="menu">
+            <div>
+                <button id="clo" onclick="clo()" class="more-button" style="background-image: url('icon/4115230_cancel_close_delete_icon.svg');display: none;"></button>
+
+                <div class="batch"></div>
+                <h1 style="text-align:center;">Menu</h1>
+                <h3 onclick="show('home')" style="text-align:center;">Home</h3>
+                <h3 onclick="show('ab')" style="text-align:center;">About</h3>
+                <h3 onclick="show('eve')" style="text-align:center;">Events</h3>
+                <h3 onclick="show('contact')" style="text-align:center;">Contact Us</h3>
+            </div>
+        </div>
+        <!-- menu -->
+
         <!-- header -->
 
         <!-- main-image -->
@@ -42,7 +59,7 @@
         <!-- main-image -->
 
         <!-- about -->
-
+        <h1 style="text-align:center;" id="ab">About</h1>
         <div class="about" id="about" style="background-image:url('image/Blue-Wave-PNG-Picture.png');">
             <div class="about-image" id="ai">
                 <div class="image"></div>
